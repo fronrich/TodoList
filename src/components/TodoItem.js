@@ -28,9 +28,13 @@ export class TodoItem extends Component {
     }
 
     render() {
+        // the markComplete on this level must be traced back to App.js
         return(
             <div style = {this.getStyle(this.props.todo.id)}>
-                <p>{this.props.todo.title}</p>
+                <p>
+                    <input type="checkbox" onChange = {this.props.markComplete}/> {' '}
+                    {this.props.todo.title}
+                </p>
             </div>
         );
     }

@@ -75,7 +75,7 @@ class App extends Component {
             <h1> Fronrich's Priority Queue </h1>
             {/* Comments in return must be written like this*/}
             {/* adds Todos component to the app*/}
-            <Todos todos={this.state.todos}/>
+            <Todos todos = {this.state.todos} markComplete = {this.markComplete}/>
             </div>
         );
     }
